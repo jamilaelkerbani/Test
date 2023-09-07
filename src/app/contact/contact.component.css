@@ -1,36 +1,64 @@
-.from-container {
-  max-width: 400px;
-  margin: 0 auto;
+.contact-form-container {
+  max-width: 1000px;
+  margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-bottom: 25px;
+ 
+}
 
+h2 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+}
 
-.from-container label {
+label {
+  display: block;
   font-weight: bold;
 }
 
-.from-container input[type="text"],
-.from-container input[type="email"],
-.from-container textarea {
-  width: 100%;
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 50%;
   padding: 10px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.from-container button {
-  background-color: #007bff;
+button {
+  display: block;
+  margin: o auto;
+  padding: 10px 20px;
+  background-color: #7d7d7d;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  transition: color 0.3s;
 }
-.from-container button:hover {
-  background-color: #0056b3;
+button:hover {
+  color: #ff9900;
 }
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #7d7d7d;
+  font-weight: bold;
+  animation: fadeOut 5s ease-in-out;
 }

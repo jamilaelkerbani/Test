@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  messageSent = false;
+  messageConfirmation='';
 formData={
   firstName:'',
   lastName:'',
@@ -13,14 +15,21 @@ formData={
   message:''
 };
 onSubmit(){
+console.log('Message envoyé :', this.formData)
 
-
+this.messageSent=true;
   this.formData={
     firstName:'',
   lastName:'',
   email:'',
   message:''
   };
+
+  this.messageConfirmation = 'Message bien recu !';
+
+  setTimeout(()=>{
+    this.messageConfirmation='';
+  },5000);
 
 };
 
