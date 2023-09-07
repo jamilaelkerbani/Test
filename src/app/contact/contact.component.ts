@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+formData={
+  firstName:'',
+  lastName:'',
+  email:'',
+  message:''
+};
+onSubmit(){
+
+
+  this.formData={
+    firstName:'',
+  lastName:'',
+  email:'',
+  message:''
+  };
+
+};
 
 }

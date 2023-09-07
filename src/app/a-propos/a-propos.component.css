@@ -1,0 +1,29 @@
+/* Style pour le conteneur principal*/
+.a-propos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Style pour chaque élément"A props" */
+.about-item {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style images*/
+
+.about-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Sytle pour les paragraphes*/
+.about-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}

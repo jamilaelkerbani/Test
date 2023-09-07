@@ -1,0 +1,27 @@
+/*Style pour le conteneur principal*/
+.accueil-container {
+  position: relative;
+  text-align: center;
+  color: #7d7d7d;
+  padding: 100px 0;
+}
+
+/*Stule pour le slogan*/
+.accueil-container h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+/*Style pour l'image d'arriere-plan*/
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}

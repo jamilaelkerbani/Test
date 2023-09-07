@@ -1,1 +1,46 @@
-
+<div class="form-container">
+<form (ngSubmit)="onSubmit()" >
+  <div class="form-group">
+    <label for="firstName">Prénom</label>
+    <input
+      type="text"
+      id="firstName"
+      name="firstName"
+      [(ngModel)]="formData.firstName"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="lastName">Nom de famille</label>
+    <input
+      type="text"
+      id="lastName"
+      name="lastName"
+      [(ngModel)]="formData.lastName"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="formData.email"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea
+      type="message"
+      id="message"
+      name="message"
+      [(ngModel)]="formData.message"
+      rows="5"
+      required
+    ></textarea>
+  </div>
+  <button type="subnit">Envoyer</button>
+</form>
+</div>
