@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  transition,
-  animate,
-} from '@angular/animations';
+import { trigger,state, style,transition, animate,} from '@angular/animations';
+import {TranslateService} from "@ngx-translate/core";
 @Component({
   selector: 'app-a-propos',
   templateUrl: './a-propos.component.html',
@@ -23,6 +18,9 @@ import {
   ],
 })
 export class AProposComponent implements OnInit {
+
+  constructor(private translate: TranslateService){}
+
   animationState = 'void';
   ngOnInit(): void {
     setTimeout(() => {

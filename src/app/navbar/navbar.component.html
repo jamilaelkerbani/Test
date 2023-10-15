@@ -1,15 +1,13 @@
 <nav>
-    <ul>
-        <li><a routerLink="/">Accueil</a></li>
-        <li><a routerLink="/a-propos">À propos</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
-        <li>
-            <select>
-                <option value="fr">Français</option>
-                <option value="en">English</option>
-            </select>
-        </li>
-   
-    </ul>
+  <ul>
+    <li><a routerLink="/">{{'home' | translate}}</a></li>
+    <li><a routerLink="/a-propos">{{'about' | translate}}</a></li>
+    <li><a routerLink="/services">{{'services' | translate}}</a></li>
+    <li><a routerLink="/contact">{{'contact' | translate}}</a></li>
+    <li>
+      <select (change)="changelang($event)">
+        <option value="navbar.component.en" [selected]="currentLang === 'en'">English</option>
+        <option value="navbar.component.fr" [selected]="currentLang === 'fr'">Francais</option>
+      </select>
+  </ul>
 </nav>
